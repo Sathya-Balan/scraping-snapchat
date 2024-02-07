@@ -14,9 +14,9 @@ def insert_doc(mydict):
         print(mydict)
         existing_document = mycol.find_one(mydict)
         if not existing_document:
-            x = mycol.insert_one(mydict)
+            docu = mycol.insert_one(mydict)
             print("inserted successfully")
-            return x.inserted_id
+            return docu.inserted_id
         else:
             return "document exist"
     
