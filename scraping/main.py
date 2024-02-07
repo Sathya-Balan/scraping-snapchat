@@ -8,8 +8,8 @@ app = Flask(__name__)
 def get():
     try:
         snapchat_link = request.args.get('link')
-        res = scarpe_data(snapchat_link)
-        return res
+        response = scarpe_data(snapchat_link)
+        return response
     
     except Exception as ex:
         return ex
