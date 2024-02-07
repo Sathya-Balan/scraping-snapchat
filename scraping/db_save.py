@@ -19,13 +19,6 @@ def insert_doc(mydict):
             return x.inserted_id
         else:
             return "document exist"
-        
-        # if mycol.count_documents(mydict) > 0:   
-        #     return "document exist" 
-        # else:
-        #     x = mycol.insert_one(mydict)
-        #     print("inserted successfully")
-        #     return x.inserted_id
     
     except Exception as ex:
         raise ex
